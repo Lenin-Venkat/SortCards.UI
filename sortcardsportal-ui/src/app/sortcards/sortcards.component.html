@@ -1,0 +1,27 @@
+<div class="container">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <textarea matInput placeholder="Ex. 1H" [(ngModel)]="input"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color color="primary" (click)="addToList()">Sort</button>
+</div>
+
+<div class="container">
+  <label>Sorted Output:</label><br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <textarea matInput placeholder="Ex. 1H" [(ngModel)]="sortedCardsList"></textarea>
+  </mat-form-field>
+</div>
+
+<div *ngIf="ValidationFailure!=''">
+  <label>Atleast one of the Input cards list is invalid. Refer to valid strings below</label><br>
+</div>
+<!-- <div class="example-label" >
+  <label>"Valid cards are:"</label><br>
+  <label>{{masterCardsList}}</label>
+</div> -->
+<div class="container">
+  <label>Valid cards are:</label><br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <textarea matInput placeholder="Ex. 1H" [(ngModel)]="masterCardsList"></textarea>
+  </mat-form-field>
+</div>
