@@ -25,7 +25,7 @@ export class SortcardsComponent implements OnInit {
   cardsList: string[]= [];
   masterCardsList: string[]=[];
   sortedCardsList: string[]=[];
-  input: string="Enter cards list(comma separated)";
+  input: string="";
   ValidationFailure: string="";
 
   addToList()

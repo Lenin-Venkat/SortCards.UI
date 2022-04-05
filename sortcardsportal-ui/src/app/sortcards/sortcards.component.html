@@ -1,6 +1,7 @@
 <div class="container">
+  <label>Enter cards list, comma separated</label><br>
   <mat-form-field class="example-full-width" appearance="fill">
-    <textarea matInput placeholder="Ex. 1H" [(ngModel)]="input"></textarea>
+    <textarea matInput aria-placeholder="Enter cards list(comma separated)" [(ngModel)]="input"></textarea>
   </mat-form-field>
   <button mat-raised-button color color="primary" (click)="addToList()">Sort</button>
 </div>
@@ -12,8 +13,8 @@
   </mat-form-field>
 </div>
 
-<div *ngIf="ValidationFailure!=''">
-  <label>Atleast one of the Input cards list is invalid. Refer to valid strings below</label><br>
+<div class="container" *ngIf="ValidationFailure!=''">
+  <label class="warning-label">Atleast one of the Input cards list is invalid. Refer to valid strings below</label><br>
 </div>
 <!-- <div class="example-label" >
   <label>"Valid cards are:"</label><br>

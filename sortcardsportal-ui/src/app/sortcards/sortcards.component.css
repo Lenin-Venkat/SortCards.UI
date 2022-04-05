@@ -1,0 +1,13 @@
+label {
+  color: black;
+  font-size: 17px;
+}
+.warning-label
+{
+color: rgb(182, 42, 42);
+font-size: 15px;
+}
+textarea {
+  width: 300px;
+  height: 100px;
+}
